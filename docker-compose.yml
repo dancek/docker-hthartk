@@ -1,0 +1,17 @@
+https-portal:
+  build: https-portal/
+  ports:
+    - '80:80'
+    - '443:443'
+  environment:
+    DOMAIN: 'hthar.tk'
+    PRODUCTION: 'true'
+  volumes:
+    - /var/run/docker.sock:/var/run/docker.sock:ro
+weechat:
+  build: weechat/
+  ports:
+    - 9001
+  tty: true
+  environment:
+    VIRTUAL_HOST: irc.hthar.tk
