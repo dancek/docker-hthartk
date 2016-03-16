@@ -2,6 +2,8 @@
 
 Quick start: `docker-compose build && docker-compose up -d`
 
+**Make sure to change the relay password!**
+
 ## HTTPS
 
 [https-portal](https://github.com/SteveLTN/https-portal) provides an automatically configured nginx reverse proxy that uses Let's Encrypt certs.
