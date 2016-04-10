@@ -4,7 +4,7 @@ https-portal:
     - '80:80'
     - '443:443'
   environment:
-    DOMAIN: 'hthar.tk'
+    DOMAIN: hannuhartikainen.fi
     PRODUCTION: 'true'
   volumes:
     - /var/run/docker.sock:/var/run/docker.sock:ro
@@ -14,4 +14,4 @@ weechat:
     - 9001
   tty: true
   environment:
-    VIRTUAL_HOST: irc.hthar.tk
+    VIRTUAL_HOST: irc.hannuhartikainen.fi
