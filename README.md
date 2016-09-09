@@ -2,7 +2,7 @@
 
 Quick start: `docker-compose build && docker-compose up -d`
 
-**Make sure to change the relay password!**
+**Make sure to set the relay password _after every restart_!**
 
 ## HTTPS
 
@@ -17,6 +17,8 @@ The password is empty by default; either change it in `weechat/.weechat/relay.co
 ```
 /set relay.network.password hunter2
 ```
+
+PROTIP: the `weechat` buffer displays the new password in plain text. Clear it with `/buffer clear`.
 
 It's possible to connect to the weechat console, too:
 
