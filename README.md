@@ -25,3 +25,5 @@ It's possible to connect to the weechat console, too:
 ```
 docker exec -it dockerdefault_weechat_1 tmux attach
 ```
+
+Alternatively, try `docker exec -it dockerdefault_weechat_1 script /dev/null -c "tmux attach"` (see [#1](https://github.com/dancek/docker-hthartk/issues/1)).
